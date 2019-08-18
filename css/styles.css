@@ -1,0 +1,135 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+.fullCenter {
+    justify-content: center;
+    align-items: center;
+}
+.col1 {
+    flex: 1;
+}
+
+.banner__principal {
+    background-image: url(../img/banner.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 210px;
+    padding-left: 105px;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+header > img {
+    margin-left: 100px;
+    width: 170px;
+}
+.header__menu {
+    margin-right: 90px;
+    color: #fff;
+}
+
+header li {
+    list-style: none;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+header li:hover {
+    color: #00c0ff;;
+}
+
+header i {
+    color: #00c0ff;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00c0ff;
+}
+.banner__principal p{
+    color: #fff;
+    max-width: 500px;
+    margin-top: 40px;
+}
+
+.btn {
+    text-transform: uppercase;
+    border: solid 2px #00c0ff;
+    padding: 10px 0px;
+    display: block;
+    width: 140px;
+    text-align: center;
+    color: #00c0ff;
+    text-decoration: none;
+    margin: 30px 0px;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    background-color: #00c0ff;
+    color: #fff;
+}
+
+.social__network i{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    color: #00c0ff;
+    margin-right: 10px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.social__network i:hover{
+    background-color: #00c0ff;
+    color: #fff;
+    border-radius: 0%;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding-top: 10px;
+    }
+    .header__menu {
+        display: none;
+    }
+    header > img {
+        width: 170px;
+        border-left: 4px solid #fff;
+        padding-left: 14px;
+        margin-left: 40px;
+    }
+    .banner__principal {
+        padding-top: 120px;
+        padding-left: 35px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .banner__principal p {
+        max-width: 230px;
+    }
+    
+
+}
